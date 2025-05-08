@@ -1,0 +1,6 @@
+<h1>Two way binding</h1>
+<input [(ngModel)]="name" type="text" placeholder="enter name">
+<h1>{{name}}</h1>
+
+<input [(ngModel)]="v1" (input)="changeName($event)" type="text">
+<h1>{{v1}}</h1>
